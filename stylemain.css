@@ -1,0 +1,9 @@
+h1 {
+    text-align: center;
+}
+
+button {
+    position: relative;
+    top: 350px;
+    left: 850px;
+}
