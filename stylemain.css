@@ -3,7 +3,31 @@ h1 {
 }
 
 button {
-    position: relative;
-    top: 350px;
-    left: 850px;
+    position: fixed;
+    top: 360px;
+    left: 700px;
+}
+
+.button2 {
+    left: 1200px;
+}
+
+img {
+    width: 180px;
+    height: 150px;
+}
+
+.img1 {
+    margin-left: 640px;
+    margin-top: 90px;
+}
+
+.img2 {
+    margin-left: 200px;
+    margin-top: 90px;
+}
+
+.img3 {
+    margin-left: 5px;
+    margin-top: 90px;
 }
