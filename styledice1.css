@@ -1,0 +1,34 @@
+.vl1 {
+    border-left: 6px solid black;
+    height: 500px;
+    position: absolute;
+    left: 10%;
+    margin-left: -3px;
+    top: 50;
+  }
+
+.vl2 {
+  border-left: 6px solid black;
+  height: 500px;
+  position: absolute;
+  left: 90%;
+  margin-left: -3px;
+  top: 50;
+  }
+
+.p1 {
+  position: absolute;
+  left: 55px;
+  top: 10px;
+}
+
+.p2 {
+  position: absolute;
+  left: 1760px;
+  top: 10px;
+}
+
+p {
+  font-size: 30px;
+  font-weight: bold;
+}
