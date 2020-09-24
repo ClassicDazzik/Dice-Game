@@ -1,0 +1,54 @@
+.vl1 {
+    border-left: 6px solid black;
+    height: 500px;
+    position: absolute;
+    left: 10%;
+    margin-left: -3px;
+    top: 50;
+  }
+
+.vl2 {
+  border-left: 6px solid black;
+  height: 500px;
+  position: absolute;
+  left: 90%;
+  margin-left: -3px;
+  top: 50;
+  }
+
+.p1 {
+  position: absolute;
+  left: 55px;
+  top: 10px;
+}
+
+.p2 {
+  position: absolute;
+  left: 1760px;
+  top: 10px;
+}
+
+p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+button {
+  position: absolute;
+  top: 500px;
+  left: 900px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.roll2_1 {
+  position: absolute;
+  margin-top: 175px;
+  margin-left: 665px;
+}
+
+.roll2_2 {
+    position: absolute;
+    margin-top: 175px;
+    margin-left: 950px;
+}
