@@ -9,8 +9,26 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <p class="p1">Player 1</p>
-    <style>
+    <div class="box">
+        <div>
+            <p class="p1">Player 1</p>
+            <div id="p1score">0</div>
+        </div>
+        <div>
+            <p id="scoretest"></p>
+            <img src="img/dicee1.png" class="dice_roll">
+            <button onclick="rolldice()" type="button" class="rollbtn">Roll!</button>
+            <div id="playerturn">Player1</div>
+            <button onclick="calcScore()" type="button" class="turnbtn">Change Turn</button>
+        </div>
+        <div>
+        <p class="p2">Player 2</p>
+        <div id="p2score">0</div>
+        </div>
+    <div id="roundScore"></div>
+
+    </div>
+    <!-- <style>
         .vl {
         border-left: 6px solid black;
         height: 500px;
@@ -23,10 +41,6 @@
             height: 500px;
         }
         </style>
-        <div class="vl2"></div> 
-    <p class="p2">Player 2</p>
-    <p id="scoretest"></p>
-    <button onclick="rolldice()" type="button" class="rollbutton1">Roll!</button>
-    <img src="img/dicee1.png" class="roll_1">
+        <div class="vl2"></div>-->
 </body>
 </html>
