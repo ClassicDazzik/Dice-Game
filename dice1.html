@@ -15,8 +15,9 @@
             <div id="p1score">0</div>
         </div>
         <div>
-            <p id="scoretest"></p>
-            <img src="img/dicee1.png" class="dice_roll">
+            <p>Roll: <span id="scoretest"></span></p>
+            <p>Roundscore: <span id="roundScore"></span></p>
+            <img id="dicepic" src="img/1.png" class="dice_roll">
             <button onclick="rolldice()" type="button" class="rollbtn">Roll!</button>
             <div id="playerturn">Player1</div>
             <button onclick="calcScore()" type="button" class="turnbtn">Change Turn</button>
@@ -24,9 +25,6 @@
         <div>
         <p class="p2">Player 2</p>
         <div id="p2score">0</div>
-        </div>
-    <div id="roundScore"></div>
-
     </div>
     <!-- <style>
         .vl {

@@ -1,7 +1,7 @@
 // Variables
 let roundScore = 0; 
 let turn = 0;
-let endscore = 20
+let endscore = 100
 
 let players = [
     {
@@ -25,7 +25,41 @@ function rolldice() {
     }
     document.getElementById("roundScore").innerHTML = roundScore;
     document.getElementById("scoretest").innerHTML = dice;
+    dicepic.src= 'img/' + dice + '.png';
     return dice;
+}
+
+// Rolls 2 dices.
+
+function rolldice2() {
+    var currentPlayer = players[turn];
+    let d1 = Math.floor(Math.random() * 6) + 1;
+    let d2 = Math.floor(Math.random() * 6) + 1;
+    let doublescore = 0 // unused, will be used later to skip turn if player gets 3 doubles in a row
+    roundScore = roundScore + d1 + d2;
+    
+    if(d1 == 1 && d2 == 1) {
+        roundScore = roundScore + 21 // supposed to give 25 points, so its set to 21 due to also getting 4 points because of how doubles work.
+        alert("Double 1's! 25 score.")
+    }
+
+    else if(d1 == 1 || d2 == 1) {
+        changeTurn()
+    }
+    
+    endscore = 1000
+    
+    if(d1 == d2){
+        roundScore = roundScore + (d1 * 2)
+        alert("doubles!");
+    }
+
+    document.getElementById("roundScore").innerHTML = roundScore;
+    document.getElementById("d1").innerHTML = d1;
+    document.getElementById("d2").innerHTML = d2;
+
+    roll2_1.src= 'img/' + d1 + '.png';
+    roll2_2.src= 'img/' + d2 + '.png';
 }
 
 // Changes turn to another player and resets the round score.

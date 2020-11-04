@@ -1,4 +1,42 @@
-.vl1 {
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+
+.box > div{
+  border: 5px solid black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.rollbutton {
+  border-color: black;
+  border-radius: 4px;
+  width: 20%;
+  font-size: 20px;
+  display: block;
+  margin-left: 10px;
+}
+
+.scorebutton {
+  border-color: black;
+  border-radius: 4px;
+  width: 20%;
+  font-size: 20px;
+  display: block;
+}
+
+/*.vl1 {
     border-left: 6px solid black;
     height: 500px;
     position: absolute;
@@ -26,11 +64,6 @@
   position: absolute;
   left: 1760px;
   top: 10px;
-}
-
-p {
-  font-size: 30px;
-  font-weight: bold;
 }
 
 button {
