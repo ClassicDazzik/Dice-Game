@@ -35,25 +35,27 @@ function rolldice2() {
     var currentPlayer = players[turn];
     let d1 = Math.floor(Math.random() * 6) + 1;
     let d2 = Math.floor(Math.random() * 6) + 1;
-    let doublescore = 0 // unused, will be used later to skip turn if player gets 3 doubles in a row
+
     roundScore = roundScore + d1 + d2;
+
+    if(d1 == d2){
+        roundScore = roundScore + (d1 * 2)
+        document.getElementById("cooltext").innerHTML = "Doubles!";
+        setTimeout(function() {
+            document.getElementById('cooltext').innerHTML = '';
+        }, 3000);
+    }
     
     if(d1 == 1 && d2 == 1) {
-        roundScore = roundScore + 21 // supposed to give 25 points, so its set to 21 due to also getting 4 points because of how doubles work.
-        alert("Double 1's! 25 score.")
+        roundScore = roundScore + 21 // supposed to give 25 points, so its set to 21 due to also getting 4 points because of how doubles work. 
     }
 
     else if(d1 == 1 || d2 == 1) {
-        changeTurn()
-    }
+        changeTurn(); 
+    }    
     
     endscore = 1000
     
-    if(d1 == d2){
-        roundScore = roundScore + (d1 * 2)
-        alert("doubles!");
-    }
-
     document.getElementById("roundScore").innerHTML = roundScore;
     document.getElementById("d1").innerHTML = d1;
     document.getElementById("d2").innerHTML = d2;
@@ -69,6 +71,7 @@ function changeTurn() {
     if(turn == players.length) {
        turn = 0;}
     roundScore = 0;
+    doublescore = 0;
     document.getElementById("playerturn").innerHTML = players[turn].name;
 }
 

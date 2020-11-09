@@ -11,20 +11,22 @@
 <body>
     <div class="box">
         <div>
-            <p class="p1">Player 1</p>
+            <p class="bold">Player 1</p>
             <div id="p1score">0</div>
         </div>
         <div>
-            <p>Roll: <span id="scoretest"></span></p>
-            <p>Roundscore: <span id="roundScore"></span></p>
+            <p class="bold">Roll: <span id="scoretest"></span></p>
+            <p class="bold">Roundscore: <span id="roundScore"></span></p>
             <img id="dicepic" src="img/1.png" class="dice_roll">
             <button onclick="rolldice()" type="button" class="rollbtn">Roll!</button>
-            <div id="playerturn">Player1</div>
+            <p class=turnshow>Turn:<span id="playerturn">Player1</span></p>
             <button onclick="calcScore()" type="button" class="turnbtn">Change Turn</button>
         </div>
         <div>
-        <p class="p2">Player 2</p>
+        <p class="bold">Player 2</p>
         <div id="p2score">0</div>
+        <div>
+        </div>
     </div>
     <!-- <style>
         .vl {

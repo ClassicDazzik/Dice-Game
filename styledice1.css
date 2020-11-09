@@ -14,9 +14,13 @@
   text-align: center;
 }
 
-p {
+.bold {
   font-size: 30px;
   font-weight: bold;
+}
+
+.turnshow {
+  margin-top: 10px;
 }
 
 .rollbtn {
@@ -25,6 +29,19 @@ p {
   width: 20%;
   font-size: 20px;
   display: block;
+  margin-left: 10px;
+}
+
+.turnbtn {
+  border-color: black;
+  border-radius: 4px;
+  width: 20%;
+  font-size: 20px;
+  display: block;
+  margin-top: -79px;
+  margin-left: 550px;
+  margin-inline-end: -1000px;
+  margin-bottom: 15px;
 }
 
 .dice_roll {
